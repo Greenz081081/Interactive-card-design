@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* MAIN CONTENT */
+    --main-content-display: grid;
+    --main-content-grid-columns: repeat(1, 4fr);
+    --main-content-background-color: white;
+    --main-content-padding: 20px;
+    --main-content-font-family: 'Oswald', sans-serif;
+
+    /* PURPLE DIV */
+    --purple-div-height: 450px;
+    --purple-div-background-color: #40128B;
+    --purple-div-grid-column: 1/2;
+
+
+    /* FORM DIV */
+    --form-div-background-color: white;
+    --form-div-padding: 20px;
+    --form-div-height: 450px;
+    --form-div-grid-column: 2/4;
+
+    /* BACK CARD */
+    --back-card-background-color: #F1F6F9;
+    --back-card-border-radius: 5px;
+    --back-card-padding: 20px;
+    --back-card-height: 120px;
+    --back-card-width: 200px;
+    --back-card-margin-left: 120px;
+    --back-card-margin-top: 240px;
+
+    /* FRONT CARD */
+    --front-card-background-color: #9336B4;
+    --front-card-border-radius: 5px;
+    --front-card-padding: 20px;
+    --front-card-height: 120px;
+    --front-card-width: 200px;
+    --front-card-margin-left: 80px;
+    --front-card-margin-top: 100px;
+
+    /* BUTTON */
+    --button-color: white;
+    --button-background-color: #40128B; 
+    --button-width: 190px;
+    --button-height: 30px;
+    --button-border-radius: 5px;
+    --button-border: none;
+
+    /* BACK CARD INPUT */
+   --back-card-input-margin-top: 10px;
+   --back-card-input-margin-left: -10px;
+   --back-card-input-text-align: right;
+   --back-card-input-background-color: #bbb;
+   --back-card-input-height: 20px;
+   --back-card-input-border: none;
+   --back-card-input-border-radius: 2px;
+   --back-card-input-padding: 2px;
+   --back-card-input-width: 180px;
+
+   /* BLACK  */
+   --black-width: 125%;
+   --black-background-color: black;
+   --black-height: 30px;
+   --black-margin-left: -20px;
+   --black-margin-top: -10px;
+}
+
+/* MAIN */
+main {
+    margin: 0.5rem auto;
+    width: 700px;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+    padding: var(--main-content-padding);
+    background-color: var(--main-content-background-color);
+    font-family: var(--main-content-font-family);
+}
+
+/* MAIN CONTENT PURPLE DIV */
+.purple {
+    grid-column: 1/2;
+    background-color: var(--purple-div-background-color);
+    height: var(--purple-div-height);
+    box-shadow: 5px 5px 5px #bbb;
+    width: 200px;
+}
+
+
+/* MAIN CONTENT FORM DIV */
+.form {
+    grid-column: 2/6;
+    background-color: var(--form-div-background-color);
+    height: var(--form-div-height);
+    padding: var(--form-div-padding);
+    box-shadow: 0 0 5px #bbb;
+    width: 460px;
+}
+
+
+/* FORM */
+.form form {
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.form input {
+    border: 1px solid #bbb;
+    height: 25px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#userMonth {
+    width: 60px;
+}
+
+#userYear {
+    width: 60px;
+}
+
+
+label{
+    margin-top: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 190px;
+    height: 30px;
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    border-radius: var(--button-border-radius);
+    border: var(--button-border);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* FRONT CARD */
+.frontCard {
+    position: absolute;
+    width: var(--front-card-width);
+    height: var(--front-card-height);
+    box-shadow: .5px .5px .5px #bbb;
+    color: white;
+    margin-left: var(--front-card-margin-left);
+    margin-top: var(--front-card-margin-top);
+    background-color: var(--front-card-background-color);
+    padding: var(--front-card-padding);
+    border-radius: var(--front-card-border-radius);
+}
+
+#frontCardP1 {
+    margin-top: 25px;
+}
+
+#frontCardP2 {
+    margin-top: 15px;
+}
+
+#frontCardP3 {
+    text-align: right;
+    margin-top: -25px;
+    margin-right: 20px;
+}
+
+#frontCardP4 {
+    text-align: right;
+    margin-top: -24px;
+}
+
+#backCardp1 {
+    font-size: xx-small;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #bbb;
+}
+
+/* BACK CARD */
+.backCard {
+    position: absolute;
+    background-color: var(--back-card-background-color);
+    width: var(--back-card-width);
+    box-shadow: 1px 1px 1px #bbb;
+    /* border: 1px solid; */
+    margin-left: var(--back-card-margin-left);
+    margin-top: var(--back-card-margin-top);
+    padding: var(--back-card-padding);
+    border-radius: var(--back-card-border-radius);
+    height: var(--back-card-height);
+}
+
+.black {
+    width: var(--black-width);
+    background-color: var(--black-background-color);
+    height: var(--black-height);
+    margin-left: var(--black-margin-left);
+    margin-top: var(--black-margin-top);
+}
+
+#frontCardCvc {
+    margin-top: var(--back-card-input-margin-top);
+    margin-left: var(--back-card-input-margin-left);
+    text-align: var(--back-card-input-text-align);
+    background-color: var(--back-card-input-background-color);
+    height: var(--back-card-input-height);
+    border: var(--back-card-input-border);
+    border-radius: var(--back-card-input-border-radius);
+    padding: var(--back-card-input-padding);
+    width: var(--back-card-input-width);
+    font-size: x-small;
+    color: white;
+}
+
+.backCard input::placeholder {
+    text-align: right;
+}
