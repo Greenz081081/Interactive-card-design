@@ -33,27 +33,29 @@
       <div class="form">
         <form action="#">
           <label for="cardholder">CARDHOLDER NAME</label><br>
-          <input type="text" placeholder="e.g. Jane Appleseed" id="cardHolder"><br>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="cardHolder" required><br>
 
           <label for="Card Number">CARD NUMBER</label><br>
-          <input type="text" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000"><br>
+          <input type="text" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" required><br>
           
           <label for="ExpDate">EXP. DATE (MM/YY)</label><br>
-            <input type="text" placeholder="MM" id="userMonth">
-            <input type="text" placeholder="YY" id="userYear"><br>
+            <input type="text" placeholder="MM" id="userMonth" required>
+            <input type="text" placeholder="YY" id="userYear" required><br>
          
           <label for="cvc">CVC</label><br>
-            <input type="text" placeholder="CVC" id="CVC"><br>
+            <input type="text" placeholder="CVC" id="CVC" required><br>
 
-          <button type="submit" id="submit" onclick="displayContents()">Confirm</button>
+          <button type="submit" id="submit">Confirm</button>
+
+          <button type="reset" id="clear" onclick="clearOutput()">Clear</button>
         </form>
       </div>
   </div>
   </main> 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Emerald Devs</a>.
-  </div>
+  <footer class="attribution">
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emerald Devs</a>. -->
+  </footer>
   <script src="js/app.js"></script>
 </body>
 </html>
