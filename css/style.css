@@ -97,7 +97,7 @@ main {
     background-image: url("../images/bg-main-desktop.png");
     height: var(--purple-div-height);
     box-shadow: 0 0 5px #bbb;
-    width: 330px;
+    width: 100%;
 }
 
 
@@ -109,7 +109,7 @@ main {
     height: var(--form-div-height);
     padding: var(--form-div-padding);
     box-shadow: 0 0 5px #bbb;
-    width: 330px;
+    width: 100%;
 }
 
 
