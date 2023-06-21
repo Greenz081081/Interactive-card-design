@@ -8,12 +8,21 @@ submitButton.addEventListener("click", (event) => {
 // A function to display the input contents
 function displayContents () {
 
+
     // DOM  INPUT DOCUMENTS
     const userName = document.querySelector("#cardHolder").value
     const userNumber = document.querySelector("#cardNumber").value
     const userMonth = document.querySelector("#userMonth").value
     const userYear = document.querySelector("#userYear").value
     const userCvc = document.querySelector("#CVC").value
+
+    if (userName == "" || userNumber == "" || userMonth == "" || userYear == "" || userCvc == "") {
+        alert ("The fields must not be empty!")
+
+        return false
+    } 
+
+    else {
 
     // DOM OUTPUT DOCUMENTS
     const displayName = document.querySelector("#frontCardP2")
@@ -46,6 +55,8 @@ function displayContents () {
 
 }
 
+}
+
 // A function to clear the input and output contents
 function clearOutput () {
 
@@ -54,5 +65,4 @@ function clearOutput () {
 
     const clearBackCard = document.querySelector("#frontCardCvc")
     clearBackCard.replaceChildren()
-
 }
